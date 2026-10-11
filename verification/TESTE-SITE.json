@@ -1,0 +1,19 @@
+{
+  "url": "http://127.0.0.1:8811/",
+  "date": "2026-10-11T21:36:38.819Z",
+  "checks": [
+    "Nome e renderização WebGL",
+    "Alternância da escultura 3D",
+    "Sem overflow em 320, 390, 768 e 1440 px",
+    "Três imagens carregadas e detalhes técnicos",
+    "Desenho real e limpeza do canvas",
+    "Fluxo didático completo",
+    "Inglês persistente, idade e curso",
+    "Cópia do contato",
+    "Controle para desligar animações",
+    "Preferência por movimento reduzido",
+    "Alternativa sem WebGL",
+    "Nenhum erro JavaScript capturado"
+  ],
+  "errors": []
+}

@@ -1,0 +1,90 @@
+{
+  "name": "Felipe Westarb",
+  "github": "https://github.com/fwestarb",
+  "languages": [
+    "pt-BR",
+    "en"
+  ],
+  "introduction": {
+    "pt": "Estou construindo projetos com foco em desenvolvimento web, automações simples com IA e chatbots. Quero ajudar pequenos negócios com soluções práticas e de escopo claro.",
+    "en": "I am building projects focused on web development, simple AI automations and chatbots. I aim to help small businesses with practical solutions and a clear scope."
+  },
+  "services": {
+    "pt": [
+      "Sites básicos",
+      "Automações leves com IA",
+      "Chatbots simples"
+    ],
+    "en": [
+      "Basic websites",
+      "Lightweight AI automations",
+      "Simple chatbots"
+    ]
+  },
+  "confirmedContact": {
+    "label": "Email",
+    "email": "felipe.westarb@gmail.com",
+    "url": "mailto:felipe.westarb@gmail.com"
+  },
+  "projects": [
+    {
+      "name": "ESP32 Tera",
+      "site": "https://fwestarb.github.io/esp32-tera/",
+      "repository": "https://github.com/fwestarb/esp32-tera",
+      "status": "Alpha 1.0",
+      "stack": [
+        "ESP32",
+        "C++",
+        "Python",
+        "Groq"
+      ],
+      "description": "Assistente na TTGO T-Display com microfone, resposta na tela, configuração pelo celular e integração com Windows.",
+      "limits": "Teclado físico e alto-falante na placa pendentes. Voz de saída e abertura de programas dependem do aplicativo no Windows.",
+      "imageOrigin": "Fotografia do protótipo fornecida pelo autor",
+      "image": "images/tera.png"
+    },
+    {
+      "name": "GhostReply",
+      "site": "https://fwestarb.github.io/ghostreply/",
+      "repository": "https://github.com/fwestarb/ghostreply",
+      "status": "Protótipo local",
+      "stack": [
+        "JavaScript",
+        "Chrome Manifest V3",
+        "Node.js",
+        "Express",
+        "Supabase",
+        "OpenRouter"
+      ],
+      "description": "Sugestões de resposta, tradução e revisão no WhatsApp Web, com autenticação e informações da empresa no banco.",
+      "limits": "Backend local necessário. Sugestões exigem revisão humana. SMTP, Google e hospedagem pública precisam de configuração.",
+      "imageOrigin": "Captura real anterior com base de conhecimento vazia",
+      "image": "images/ghostreply.png"
+    },
+    {
+      "name": "Projeto Câmera",
+      "site": "https://fwestarb.github.io/projeto-camera/",
+      "repository": "https://github.com/fwestarb/projeto-camera",
+      "status": "Experimentos",
+      "stack": [
+        "Python",
+        "OpenCV",
+        "MediaPipe"
+      ],
+      "description": "Desenho por gestos e lembrete de postura usando pontos de modelos pré-treinados.",
+      "limits": "Não é diagnóstico médico. Gestos, calibração, áudio e mouse ainda precisam de validação manual com câmera.",
+      "imageOrigin": "Interface real executada com quadro e pontos sintéticos; sem webcam",
+      "image": "images/camera.png"
+    }
+  ],
+  "pendingInformation": [],
+  "age": 14,
+  "ageConfirmedOn": "2026-10-11",
+  "education": {
+    "course": "Tech Explores",
+    "institution": "Proway",
+    "city": "Blumenau",
+    "status": "Em andamento"
+  },
+  "visualDirection": "Escuro com verde e elementos 3D, próximo da identidade Tera"
+}
