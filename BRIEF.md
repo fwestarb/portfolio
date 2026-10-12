@@ -1,48 +1,52 @@
 # Portfólio — Felipe Westarb
 
-## Objetivo
+## Direção vigente: editorial, 12/10/2026
 
-Atrair propostas para sites básicos, automações leves com IA e chatbots simples. Português e inglês. Apresentação honesta com projetos pessoais, código verificável e limites claros.
+Pedido do autor: refazer o visual para ficar muito parecido com https://enricodeiana.design/, manter as informações pessoais/projetos e algumas cores da Tera, abandonar o design anterior e a árvore. Esta direção substitui as exigências visuais de árvore, shaders, carrossel 3D e vídeos da especificação anterior.
 
-## Referências analisadas
+## Referência e interpretação
 
-O primeiro link veio com duas URLs unidas; foram consultadas separadamente:
+Consultadas visualmente a abertura, apresentação, projetos, laboratório, contato, página Sobre e abertura móvel. A referência usa grafite sólido, texto claro, fontes serifadas expressivas em escala grande, imagens assimétricas, títulos sobrepostos, faixas em movimento e navegação discreta.
 
-- https://davidwhyte.com/experience/ — a consulta visual ficou na tela de carregamento; não tratar a experiência completa como validada.
-- https://tamalsen.dev/ — apresentação direta, nome em grande escala e organização de conhecimentos/projetos.
-- https://theothersideoftruth.com/ — composição de tela cheia e tipografia de grande escala; referência visual, não conteúdo editorial.
-- https://www.igloo.inc/ — cena 3D e atmosfera visual. A captura mostrou uma fase de renderização; não presumir comportamento em dispositivos lentos.
+Implementação própria: grafite esverdeado #1d2321, texto claro #e5e1d3, verde #b2c79b, Manrope e Cormorant Garamond OFL locais. Sem copiar o código, imagens, fontes comerciais, marcas, prêmios ou textos do autor da referência. Textos e links alheios ao portfólio vistos na referência não são usados.
 
-Criar identidade e animações próprias. Os screenshots das referências são material de estudo local e não serão distribuídos no portfólio.
+## Conteúdo preservado
 
-## Conteúdo confirmado
+Felipe Westarb, 14 anos conforme outubro de 2026. Tech Explores na Proway em Blumenau; não inferir residência. Serviços simples: sites, automações leves com IA e chatbots. Contato: felipe.westarb@gmail.com. GitHub fwestarb. PT/EN.
 
-Dados iniciais em content.confirmed.json. Felipe Westarb; foco em web, IA e chatbots; três projetos publicados; GitHub, contato felipe.westarb@gmail.com, idade de 14 anos e curso Tech Explores na Proway em Blumenau, informados pelo autor. Não incluir clientes, anos de experiência, formação, cargo, métricas ou depoimentos sem confirmação.
+ESP32 Tera, GhostReply e Projeto Câmera, com fotografias/capturas existentes, origem identificada, tecnologias, objetivo, implementação, resultados registrados, limitações, site e código. Não inventar clientes, experiência, prêmios, métricas ou novas funcionalidades.
 
-## Estrutura proposta
+## Estrutura e comportamento
 
-1. Abertura: nome, apresentação curta, cena 3D original, acesso direto a projetos e contato.
-2. Serviços: sites básicos, automações leves e chatbots, com exemplos de escopo claro.
-3. Projetos: Tera, GhostReply e Câmera. Cada caso apresenta problema, implementação, tecnologias, resultados verificados e limitações, com site e código.
-4. Laboratório interativo: experiências de interface e visualização que realmente rodam no navegador. Identificar demonstrações e simulações; não representar uma animação como chamada real de IA.
-5. Sobre: apresentação confirmada e tecnologias usadas em projetos, sem barras de porcentagem arbitrárias.
-6. Contato: contato público informado pelo autor; enquanto não houver, GitHub é o único contato confirmado.
+- Abertura tipográfica de tela cheia, entrada coordenada do texto e link para projetos.
+- Apresentação curta; três imagens amplas em posições alternadas e títulos sobrepostos. Detalhes em diálogo, três imagens por projeto.
+- Desenho e fluxo “Por dentro da Tera” removidos por pedido do autor. Faixa tipográfica entre projetos e apresentação, vinculada à rolagem.
+- Sobre e formação. Lista de conhecimentos e serviços, em lugar de prêmios.
+- Contato tipográfico, mailto, cópia de e-mail, GitHub e créditos.
+- Menu de tela inteira com foco contido, Escape e retorno do foco. Diálogos tornam a página externa inerte.
+- Entrada da abertura; saída suave das linhas ao rolar; revelação de palavras da apresentação e títulos; parallax de mídia; abertura das máscaras de imagens; entrada de linhas de conhecimentos/serviços; faixa tipográfica e indicador de progresso vinculados à rolagem. Sem seções fixadas artificialmente ou captura da roda do mouse. Sem WebGL, árvore, vídeo antigo ou áudio automático.
+- Animações sempre ativas por pedido explícito do autor; sem controle para desativar. Preferências anteriores de movimento não são consultadas. Idioma continua persistente.
 
-## Movimento e desempenho
+## Critérios de verificação
 
-Cena 3D procedural original; transições de rolagem; entradas de texto; respostas de hover/toque e foco; cartões de projetos interativos. Nenhuma animação deve bloquear navegação ou links. Pausa fora da tela, limite de densidade de pixels, carregamento adiado e versão estática para movimento reduzido/WebGL indisponível. Sem áudio automático.
+Build de produção isolado; testes de conteúdo, diálogos/imagens/foco, menu, PT/EN, cinco larguras, animações sempre ativas, remoção das demonstrações, revelação de texto e falha de imagem. Capturas desktop e móvel, revisão de contraste e ajuste das imagens em diálogo. Testar também caminhos relativos em subdiretório.
 
-## Ordem de implementação
+## Publicação
 
-1. Completar apresentação, contato e direção visual com respostas do autor.
-2. Definir layout e roteiro das animações.
-3. Montar React/Vite, conteúdo bilíngue e componentes acessíveis.
-4. Implementar cena 3D original e navegação por seções.
-5. Inserir projetos e imagens com origem corretamente identificada.
-6. Implementar experiências interativas e contato real.
-7. Verificar teclado, toque, telas pequenas, links, carregamento e alternativa sem efeitos.
-8. Publicar e atualizar o link do portfólio no GitHub após concluir o conteúdo.
+Versão local para avaliação. Não executar push/deploy nem alterar a pasta docs publicada nesta etapa. Backup da versão anterior verificado em portfolio-direcao-visual; arquivos antigos arquivados fora do projeto.
 
-## Estado
+## Refinamento solicitado: construção procedural pela rolagem
 
-Implementado em React/Vite com identidade escura e verde, 3D original, três projetos, conteúdo bilíngue e laboratório no navegador. Verificações em verification/TESTE-SITE.json. Publicação em GitHub Pages: https://fwestarb.github.io/portfolio/.
+As composições dos projetos agora são sequências reversíveis: imagem revelada por 12 máscaras em grade, enquadramento se estabiliza, nome se forma por recorte e descrição aparece. Palavras dos textos e linhas divisórias progridem conforme a posição da página. Ao parar de rolar, a sequência para; ao voltar, regride. O conteúdo é pré-definido; “geração” descreve a construção visual, não texto gerado por IA.
+
+Pesquisa: Codrops Sticky Grid Scroll, On-Scroll Perspective Grid Animations e documentação GSAP ScrollTrigger. Implementação própria, sem copiar imagens ou código dos exemplos e sem dependência adicional.
+
+## Acabamento final antes do deploy
+
+Pedido vigente: movimentos sempre ativos, remover seletor e tornar a animação mais limpa/fluida. Lenis sincronizado com o ticker GSAP; toque mantém comportamento nativo. Amplitudes menores, máscaras em ordem contínua e enquadramento sem rotação. Botões magnéticos e indicação de abertura seguindo o ponteiro; linhas vetoriais desenhadas/moldadas pela rolagem; refração SVG discreta na fotografia Tera apenas em ponteiro fino. Prints GhostReply/Câmera permanecem sem distorção.
+
+Menu/detalhes pausam a rolagem da página enquanto o diálogo pode rolar normalmente. Recursos e eventos são destruídos ao desmontar. Não há novo WebGL renderer ou loop de shader permanente. SVG displacement é um filtro, não um shader GLSL. Sem publicação nesta etapa.
+
+## Publicação autorizada
+
+O autor autorizou o deploy no GitHub neste chat. Gerar docs, publicar no repositório fwestarb/portfolio e validar https://fwestarb.github.io/portfolio/ após a atualização do GitHub Pages. Esta autorização substitui as restrições de publicação das etapas anteriores.

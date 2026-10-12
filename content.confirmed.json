@@ -41,7 +41,7 @@
       "description": "Assistente na TTGO T-Display com microfone, resposta na tela, configuração pelo celular e integração com Windows.",
       "limits": "Teclado físico e alto-falante na placa pendentes. Voz de saída e abertura de programas dependem do aplicativo no Windows.",
       "imageOrigin": "Fotografia do protótipo fornecida pelo autor",
-      "image": "images/tera.png"
+      "image": "media/tera-1280.webp"
     },
     {
       "name": "GhostReply",
@@ -59,7 +59,7 @@
       "description": "Sugestões de resposta, tradução e revisão no WhatsApp Web, com autenticação e informações da empresa no banco.",
       "limits": "Backend local necessário. Sugestões exigem revisão humana. SMTP, Google e hospedagem pública precisam de configuração.",
       "imageOrigin": "Captura real anterior com base de conhecimento vazia",
-      "image": "images/ghostreply.png"
+      "image": "media/ghostreply-382.webp"
     },
     {
       "name": "Projeto Câmera",
@@ -74,7 +74,7 @@
       "description": "Desenho por gestos e lembrete de postura usando pontos de modelos pré-treinados.",
       "limits": "Não é diagnóstico médico. Gestos, calibração, áudio e mouse ainda precisam de validação manual com câmera.",
       "imageOrigin": "Interface real executada com quadro e pontos sintéticos; sem webcam",
-      "image": "images/camera.png"
+      "image": "media/camera-640.webp"
     }
   ],
   "pendingInformation": [],
@@ -86,5 +86,5 @@
     "city": "Blumenau",
     "status": "Em andamento"
   },
-  "visualDirection": "Escuro com verde e elementos 3D, próximo da identidade Tera"
+  "visualDirection": "Editorial escuro inspirado em enricodeiana.design, serifas grandes, imagens assimétricas, verde discreto, sem árvore e sem cena 3D."
 }

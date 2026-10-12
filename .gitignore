@@ -3,3 +3,12 @@ private-backups/
 .env
 .env.*
 *.log
+
+preview-dist/
+.playwright-output/
+verification/full-site/recording/
+
+# Retired local design sources and historical browser evidence
+src/vendor/
+verification/full-site/
+verification/milestone-1/
