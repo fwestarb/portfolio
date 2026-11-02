@@ -30,12 +30,10 @@ export function usePointerPolish(root,lang){
    });
    root.current.querySelectorAll('.cover-frame').forEach(frame=>{
     const badge=frame.querySelector('.cover-action'),x=gsap.quickTo(badge,'x',{duration:.35,ease:'power3.out'}),y=gsap.quickTo(badge,'y',{duration:.35,ease:'power3.out'});
-    const displacement=frame.classList.contains('cover-tera')?document.querySelector('#hardware-refraction feDisplacementMap'):null;
-    const enter=()=>{if(displacement)gsap.to(displacement,{attr:{scale:5},duration:.7,ease:'power2.out'});};
     const move=e=>{const r=frame.getBoundingClientRect(),half=badge.offsetWidth/2;const px=gsap.utils.clamp(half+12,r.width-half-12,e.clientX-r.left),py=gsap.utils.clamp(half+12,r.height-half-12,e.clientY-r.top);x(px-(r.width-24-half));y(py-(r.height-24-half));};
-    const leave=()=>{x(0);y(0);if(displacement)gsap.to(displacement,{attr:{scale:0},duration:.7,ease:'power2.out'});};
-    frame.addEventListener('pointerenter',enter);frame.addEventListener('pointermove',move);frame.addEventListener('pointerleave',leave);
-    cleanups.push(()=>{frame.removeEventListener('pointerenter',enter);frame.removeEventListener('pointermove',move);frame.removeEventListener('pointerleave',leave);x.tween.kill();y.tween.kill();gsap.set(badge,{clearProps:'transform'});if(displacement){gsap.killTweensOf(displacement);displacement.setAttribute('scale','0');}});
+    const leave=()=>{x(0);y(0);};
+    frame.addEventListener('pointermove',move);frame.addEventListener('pointerleave',leave);
+    cleanups.push(()=>{frame.removeEventListener('pointermove',move);frame.removeEventListener('pointerleave',leave);x.tween.kill();y.tween.kill();gsap.set(badge,{clearProps:'transform'});});
    });
    dispose=()=>cleanups.forEach(fn=>fn());
   }
