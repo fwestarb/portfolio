@@ -41,8 +41,12 @@ Bilingual personal portfolio for Felipe Westarb, a technology student presenting
 
 Project details retain evidence and limitations. The drawing canvas and Tera workflow demos were removed. Word reveals, image transitions and a progress indicator follow native scrolling. The interface includes persistent language preference and always-active motion, keyboard-accessible dialogs and responsive layouts.
 
-## Acabamento final
+## Design Lock — versão atual
 
-Lenis 1.3.26 para rolagem suavizada, integrado ao ticker GSAP. Máscaras sequenciais, parallax reduzido, botões magnéticos, indicador seguindo o ponteiro, curvas SVG construídas ao rolar e refração SVG leve na foto Tera em desktop. Toque mantém scroll nativo. Diálogos pausam a página sem bloquear sua própria rolagem. Sem seletor de movimento, conforme solicitação explícita do autor. Nove testes automatizados incluem estado ativo mesmo com preferência antiga desligada, roda do mouse, SVG, pausa/reversão e diálogos.
+Atualização solicitada em 01/11/2026: preserva a identidade editorial e acrescenta ondas WebGL na abertura, retícula na Tera, expansão de imagens com GSAP Flip, menu com prévias, mostruários React para GhostReply/Câmera e galeria com miniaturas/ampliação. Rótulos mobile maiores e máscaras tipográficas ajustadas. Sem envio de mensagens, acesso à câmera ou chamada de IA.
 
-Publicação em GitHub Pages: https://fwestarb.github.io/portfolio/. O build público fica em docs; o código-fonte permanece em src. Para atualizar, executar os testes, gerar npm run build, revisar e enviar a alteração ao repositório.
+Paper Shaders 0.0.82 fica em um chunk sob demanda; efeitos são desmontados fora da região visível e mantêm fallback sem WebGL/perda de contexto. A retícula substitui a refração SVG anterior. React/GSAP/Lenis continuam como base; não há Motion ou React Bits Pro adicional. A animação ativa segue a preferência explícita registrada no BRIEF.
+
+`npm test` cobre navegação, idiomas/cinco larguras, foco e diálogos, movimento/scroll, mostruários, ampliação, shaders reais e fallback/context loss, clipboard e falha de imagem. A execução WebGL automatizada usa SwiftShader; não equivale a benchmark de dispositivos físicos.
+
+Build de produção: `npm run build` gera docs para GitHub Pages. Para uma conferência local sem alterar docs, use `npm run build -- --outDir preview-dist`. Créditos em THIRD-PARTY.md e public/credits.html.

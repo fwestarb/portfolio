@@ -10,10 +10,17 @@ Font files are locally hosted with their OFL notices under public/fonts. Cormora
 
 The editorial composition is inspired by https://enricodeiana.design/ following the author's request. Its source, commercial fonts, branding, images, awards and written claims were not copied. The application code and interactions were written for this project.
 
-Project photographs and screenshots come from Felipe's existing project media. Captions distinguish real photographs, earlier screenshots, example data and synthetic inputs. No AI-generated tree, previous tree video or 3D library is part of the current page. The page has no WebGL renderer.
+Project photographs and screenshots come from Felipe's existing project media. Captions distinguish real photographs, earlier screenshots, example data and synthetic inputs. No AI-generated tree, previous tree video or 3D library is part of the current page. The current Design Lock revision adds localized Paper Shaders WebGL effects with static fallback.
 
 Earlier React Bits/EZ-Tree source and media have an external recoverable backup. A dormant src/vendor legacy copy may remain locally because the operating system prevented moving that directory; it is not imported or bundled. Its MIT notices remain with its source. Historical verification documents describe earlier versions and do not claim current UI behavior.
 
 - Lenis 1.3.26 — MIT: https://github.com/darkroomengineering/lenis . Versão exata registrada no package-lock.json.
 
-Pesquisa visual adicional: hover/displacement do Codrops e GSAP quickTo. Efeitos de ponteiro e curvas vetoriais foram implementados para este portfólio; nenhum shader/código de exemplo foi copiado. A refração usa feTurbulence/feDisplacementMap SVG e não exige Three.js.
+Pesquisa visual adicional: hover/displacement do Codrops e GSAP quickTo. Efeitos de ponteiro e curvas vetoriais foram implementados para este portfólio; nenhum shader/código de exemplo foi copiado. A refração SVG anterior foi substituída pela retícula da revisão Design Lock.
+
+## Design Lock — 01/11/2026
+
+- @paper-design/shaders-react and @paper-design/shaders 0.0.82 — Apache-2.0: https://github.com/paper-design/shaders . License/notice supplied under public/licenses. Used for Dithering and ImageDithering, loaded in a separate chunk.
+- GSAP Flip — same GSAP license, for project image transitions: https://gsap.com/docs/v3/Plugins/Flip/ .
+- React Bits Dither, Flowing Menu and Pixel Transition informed the proposal: https://reactbits.dev/ . Their source was not copied; menu, masks, galleries and showcases are original project components, using GSAP. No React Bits Pro component or paid asset was installed.
+- Camera annotations are illustrative overlays on the existing synthetic screenshots, not a live detection result. GhostReply showcases use the existing labeled screenshots and make no model calls.

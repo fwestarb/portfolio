@@ -49,7 +49,7 @@ test('layout fits five viewport sizes in both languages without clipped titles',
 });
 
 test('removed demos stay absent and scroll reveals text with active motion',async({page})=>{
- await page.goto('/');await expect(page.locator('canvas')).toHaveCount(0);await expect(page.getByText('Por dentro da Tera',{exact:true})).toHaveCount(0);
+ await page.goto('/');await expect(page.locator('.drawing-surface canvas')).toHaveCount(0);await expect(page.getByText('Por dentro da Tera',{exact:true})).toHaveCount(0);
  await expect(page.getByText('Um espaço para desenhar',{exact:true})).toHaveCount(0);
  expect(await page.locator('.about-lead .reveal-word').last().evaluate(e=>new DOMMatrix(getComputedStyle(e).transform).m42)).toBeGreaterThan(10);
  await page.locator('#sobre').scrollIntoViewIfNeeded();await expect.poll(()=>page.locator('.about-lead .reveal-word').last().evaluate(e=>Math.abs(new DOMMatrix(getComputedStyle(e).transform).m42))).toBeLessThan(1);
@@ -77,13 +77,13 @@ test('procedural image assembly pauses with scroll and reverses on desktop and m
 });
 
 
-test('smooth wheel, magnetic pointer and SVG refraction work with dialog scrolling',async({page})=>{
+test('smooth wheel, reticle control and project expansion work with dialog scrolling',async({page})=>{
  await page.goto('/');await expect(page.locator('html')).toHaveClass(/lenis/);
  await page.mouse.wheel(0,450);await expect.poll(()=>page.evaluate(()=>scrollY)).toBeGreaterThan(100);
  await page.locator('.work-tera').scrollIntoViewIfNeeded();await page.waitForTimeout(700);const photo=page.locator('.cover-tera');const box=await photo.boundingBox();
- await page.mouse.move(box.x+100,Math.max(120,box.y+100));await expect.poll(()=>page.locator('#hardware-refraction feDisplacementMap').getAttribute('scale')).not.toBe('0');
- await page.mouse.move(10,110);await expect.poll(async()=>Number(await page.locator('#hardware-refraction feDisplacementMap').getAttribute('scale'))).toBeLessThan(.05);
+ await page.getByRole('button',{name:'Explorar retícula',exact:true}).click();await expect(page.locator('.work-tera')).toHaveAttribute('data-reticle','true');
+ await page.getByRole('button',{name:'Ver fotografia',exact:true}).click();await expect(page.locator('.work-tera')).toHaveAttribute('data-reticle','false');
  await page.getByRole('button',{name:'Explorar projeto: ESP32 Tera',exact:true}).click();await expect(page.locator('html')).toHaveClass(/lenis-stopped/);
- const overlay=page.locator('.dialog-backdrop');await overlay.hover();await page.mouse.wheel(0,500);await expect.poll(()=>overlay.evaluate(e=>e.scrollTop)).toBeGreaterThan(100);
+ const overlay=page.locator('.dialog-backdrop');const backgroundScroll=await page.evaluate(()=>scrollY);await page.locator('.case-copy .dialog-summary').hover();await page.mouse.wheel(0,500);await expect.poll(()=>overlay.evaluate(e=>e.scrollTop)).toBeGreaterThan(0);expect(await page.evaluate(()=>scrollY)).toBe(backgroundScroll);
  await page.getByRole('dialog').press('Escape');await expect(page.locator('html')).not.toHaveClass(/lenis-stopped/);
 });

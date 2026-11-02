@@ -1,5 +1,14 @@
 # Portfólio — Felipe Westarb
 
+## Atualização Design Lock — 01/11/2026
+
+Pedido atual do autor: implementar a proposta ampliada e entregar um link pronto para visualizar. Este escopo autoriza shaders localizados, expansão dos projetos, mostruários React, menu com prévias, galeria ampliada, refinamento do contato e correções de legibilidade; substitui a ausência de WebGL da versão anterior. Permanecem paleta, fontes, direção editorial, informações reais, PT/EN e movimento ativo. A composição nova é uma candidata entregue, não uma aprovação visual registrada em nome do autor.
+
+Paper Shaders 0.0.82: ondas na abertura e retícula na fotografia Tera; fallback sem WebGL, descarte ao sair da região e proteção contra perda de contexto. GSAP Flip expande a imagem ao estudo de caso e devolve foco ao fechar. Capturas GhostReply e marcações Câmera são demonstrações identificadas, sem IA, câmera ou mensagens reais. A retícula substitui a antiga refração SVG da fotografia. Nenhuma árvore, desenho interativo ou fluxo Tera antigo foi restaurado.
+
+A documentação abaixo registra a base e as etapas anteriores; em conflito, esta atualização é vigente.
+
+
 ## Direção vigente: editorial, 12/10/2026
 
 Pedido do autor: refazer o visual para ficar muito parecido com https://enricodeiana.design/, manter as informações pessoais/projetos e algumas cores da Tera, abandonar o design anterior e a árvore. Esta direção substitui as exigências visuais de árvore, shaders, carrossel 3D e vídeos da especificação anterior.
